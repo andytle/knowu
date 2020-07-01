@@ -28,7 +28,7 @@
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
-                                            <segue destination="aFm-Rs-nZn" kind="show" id="5pX-bc-FiZ"/>
+                                            <segue destination="aFm-Rs-nZn" kind="showDetail" id="5pX-bc-FiZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fD-7u-168">
@@ -104,7 +104,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ETd-Kr-aXj"/>
                                             <constraint firstAttribute="height" constant="40" id="mej-Rl-KNy"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Sign Up"/>
                                         <connections>
                                             <action selector="signUpTapped:" destination="aFm-Rs-nZn" eventType="touchUpInside" id="hMA-Xs-HxN"/>
                                         </connections>
@@ -124,15 +124,26 @@
                                     <constraint firstItem="4tA-V9-hxL" firstAttribute="height" secondItem="gyM-De-8er" secondAttribute="height" id="yIa-qa-owi"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPC-Hs-2ju">
+                                <rect key="frame" x="20" y="44" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="NJT-1I-Ufq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="OPC-Hs-2ju" firstAttribute="top" secondItem="8Ap-14-Ntm" secondAttribute="top" id="34v-4Y-E5p"/>
+                            <constraint firstItem="OPC-Hs-2ju" firstAttribute="leading" secondItem="8Ap-14-Ntm" secondAttribute="leading" constant="20" id="9eu-Ua-FKM"/>
                             <constraint firstItem="kQ0-5a-YXf" firstAttribute="leading" secondItem="8Ap-14-Ntm" secondAttribute="leading" constant="40" id="UqQ-C4-Lco"/>
                             <constraint firstItem="kQ0-5a-YXf" firstAttribute="top" secondItem="8Ap-14-Ntm" secondAttribute="top" constant="40" id="csd-w5-xQG"/>
                             <constraint firstItem="8Ap-14-Ntm" firstAttribute="trailing" secondItem="kQ0-5a-YXf" secondAttribute="trailing" constant="40" id="qZv-Rk-JRf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Ap-14-Ntm"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="emailTextField" destination="Ux6-gP-bHv" id="1Wf-u6-ING"/>
                         <outlet property="errorLabel" destination="ao7-s4-mCo" id="vUz-Th-sgh"/>
@@ -216,10 +227,19 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCL-lL-Q2T">
+                                <rect key="frame" x="20" y="44" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="1OK-Lc-uz0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="sCL-lL-Q2T" firstAttribute="leading" secondItem="YMz-2a-s0H" secondAttribute="leading" constant="20" id="6dM-id-8Xv"/>
                             <constraint firstItem="YMz-2a-s0H" firstAttribute="trailing" secondItem="Puk-eU-Arz" secondAttribute="trailing" constant="40" id="IJV-ij-9WU"/>
+                            <constraint firstItem="sCL-lL-Q2T" firstAttribute="top" secondItem="YMz-2a-s0H" secondAttribute="top" id="U5X-ZM-9oU"/>
                             <constraint firstItem="Puk-eU-Arz" firstAttribute="leading" secondItem="YMz-2a-s0H" secondAttribute="leading" constant="40" id="UpH-9z-Teg"/>
                             <constraint firstItem="Puk-eU-Arz" firstAttribute="top" secondItem="YMz-2a-s0H" secondAttribute="top" constant="40" id="xqJ-yY-jP4"/>
                         </constraints>
@@ -254,4 +274,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="-578.57142857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="NJT-1I-Ufq"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -1,0 +1,6 @@
+framework module Pods_knowuTests {
+  umbrella header "Pods-knowuTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
