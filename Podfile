@@ -8,6 +8,7 @@ target 'knowu' do
   # Pods for knowu
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
   target 'knowuTests' do
     inherit! :search_paths
     # Pods for testing
