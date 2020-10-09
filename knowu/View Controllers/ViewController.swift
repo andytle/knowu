@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var LoginButton: UIButton!
+    @IBOutlet weak var ExploreButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
     func setUpElements() {
         Utilities.styleFilledButton(signUpButton)
         Utilities.styleFilledButton(LoginButton)
+        Utilities.styleFilledButton(ExploreButton)
     }
 }
 

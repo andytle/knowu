@@ -9,16 +9,20 @@
 import Foundation
 import UIKit
 
-class Utilities {
+class Utilities
+{
     
-    static func styleTextField(_ textfield:UITextField) {
+    static func styleTextField(_ textfield:UITextField)
+    {
         
         // Create the bottom line
         let bottomLine = CALayer()
         
         bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: textfield.frame.width, height: 2)
         
-        bottomLine.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1).cgColor
+       
+        bottomLine.backgroundColor = UIColor.init(red: 0.75, green: 0.73, blue: 0.72, alpha: 1).cgColor
+        //the grey colour of the bottom line is set here [red: 0.75, green: 0.73, blue: 0.72]
         
         // Remove border on text field
         textfield.borderStyle = .none
@@ -28,10 +32,11 @@ class Utilities {
         
     }
     
+    
     static func styleFilledButton(_ button:UIButton) {
         
         // Filled rounded corner style
-        button.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)
+        button.backgroundColor = UIColor.init(red: 1.00, green: 0.65, blue: 0.36, alpha: 1)
         button.layer.cornerRadius = 25.0
         button.tintColor = UIColor.white
     }
